@@ -1,0 +1,1 @@
+char const* gbk_str = "我是一个GBK字符编码的字符串！请保障我所在的CPP文件编码为GBK！"; 

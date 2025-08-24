@@ -1,0 +1,109 @@
+{
+    "C_Cpp.debugShortcut": false,
+    "cmake.options.statusBarVisibility": "visible",
+    "cmake.options.advanced": {            
+        "variant": {
+            "statusBarVisibility": "compact", // 变体使用精简方式
+        },
+        "kit": {
+            "statusBarVisibility": "compact", // 构建组件使用精简方式
+        },
+        "configure": { // 配置，只能在侧边栏中显示
+            "projectStatusVisibility": "visible"
+        },
+        "build": {  // 生成
+            "statusBarVisibility": "visible",
+        },
+        "buildTarget": { // 生成目标选择
+            "statusBarVisibility": "visible",
+            },
+        "debug": { // 调试
+            "statusBarVisibility": "inherit",
+        },
+        "launch": { // 启动
+            "statusBarVisibility": "visible",
+        },
+        "cpack": { // 打包
+            "statusBarVisibility": "hidden",
+            "projectStatusVisibility": "hidden"
+        },
+        "workflow": { // 工作流
+            "statusBarVisibility": "hidden",
+            "projectStatusVisibility": "hidden"
+        }
+    },
+    "cmake.debugConfig": {
+        "console": "integratedTerminal",
+        "setupCommands": [
+            {
+                "description": "为 gdb 启用整齐打印",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+            },
+            {
+                "description": "将反汇编风格设置为 Intel",
+                "text": "-gdb-set disassembly-flavor intel",
+                "ignoreFailures": true
+            },
+            {
+                "description": "让 GDB 使用 UTF-8 编码",
+                "text": "-gdb-set charset UTF-8",
+                "ignoreFailures": false
+            }            
+        ]
+    },
+    "files.associations": {
+        "cctype": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "cwchar": "cpp",
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "stdexcept": "cpp",
+        "string": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "xtr1common": "cpp",
+        "xutility": "cpp",
+        "string_view": "cpp",
+        "iostream": "cpp",
+        "system_error": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "charconv": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "ctime": "cpp",
+        "format": "cpp",
+        "ios": "cpp",
+        "istream": "cpp",
+        "iterator": "cpp",
+        "locale": "cpp",
+        "memory": "cpp",
+        "ostream": "cpp",
+        "streambuf": "cpp",
+        "typeinfo": "cpp",
+        "xfacet": "cpp",
+        "xiosbase": "cpp",
+        "xlocale": "cpp",
+        "xlocbuf": "cpp",
+        "xlocinfo": "cpp",
+        "xlocmes": "cpp",
+        "xlocmon": "cpp",
+        "xlocnum": "cpp",
+        "xloctime": "cpp",
+        "sstream": "cpp",
+        "*.in": "cpp"
+    }
+}

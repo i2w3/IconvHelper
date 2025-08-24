@@ -1,0 +1,13 @@
+{
+  "name": "iconvhelper",
+  "version": "1.0.0",
+  "dependencies": [
+    "libiconv"
+  ],
+  "overrides": [
+    {
+      "name": "libiconv",
+      "version": "1.18#1"
+    }
+  ]
+}
