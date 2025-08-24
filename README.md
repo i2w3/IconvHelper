@@ -5,6 +5,7 @@
 ```powershell
 vcpkg new --name=iconvhelper --version=1.0.0
 vcpkg add port libiconv
+vcpkg install --x-install-root build/vcpkg_installed
 cmake --preset release
 cmake --build build/release
 ```
